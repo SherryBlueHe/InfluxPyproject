@@ -28,7 +28,7 @@ def main(host='localhost', port=8086):       #input your port number which has b
     narr=np.delete(arr,0)
     length=len(narr);
     print(narr); # getting /n (new line?,why?)
-    narr[length-1]=narr[length-1].replace("\n",""); #for some reason my final row is getting /n,
+    narr[length-1]=narr[length-1].replace("\n",""); #for some reason my final column is getting /n,
     #  I guess there is an issue with the csv file conversion, sub string /n replaced with blank(not efficient)
     print(narr); #removed /n
     print("Create database: " + dbname)
